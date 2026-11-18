@@ -1,0 +1,2 @@
+GET /docs/b.txt HTTP/1.0
+

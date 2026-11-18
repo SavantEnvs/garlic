@@ -1,0 +1,8 @@
+<manifest package="demo.app" android:versionCode="">
+  <uses-permission android:name="android.permission.INTERNET">
+  </uses-permission>
+  <application android:label="Demo">
+    <activity android:name="demo.Main">
+    </activity>
+  </application>
+</manifest>

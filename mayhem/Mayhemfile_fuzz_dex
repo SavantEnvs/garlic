@@ -1,0 +1,9 @@
+project: savantenvs/garlic
+target: fuzz_dex
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_dex/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_dex
+    libfuzzer: true
+    timeout: 30

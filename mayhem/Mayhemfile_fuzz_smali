@@ -1,0 +1,9 @@
+project: savantenvs/garlic
+target: fuzz_smali
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_smali/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_smali
+    libfuzzer: true
+    timeout: 30
